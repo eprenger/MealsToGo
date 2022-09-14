@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 import { Card } from 'react-native-paper';
 
-export const RestaurantsInfo = ({restaurant = {}}) => {
+export const RestaurantsInfoCard = ({restaurant = {}}) => {
     const {
         name = "Some Restaurant",
         icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
