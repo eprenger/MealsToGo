@@ -7,7 +7,7 @@ import {
   SafeAreaView,
   StatusBar,
 } from "react-native";
-import { RestaurantsInfo } from "../components/restaurant-info.component";
+import { RestaurantsInfo } from "../components/restaurant-card.component";
 
 export const RestaurantsScreen = () => {
   return (
