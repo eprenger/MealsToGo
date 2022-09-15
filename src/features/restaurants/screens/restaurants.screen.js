@@ -11,6 +11,11 @@ const SearchView = styled.View`
   padding: 16px;
 `;
 
+const SafeArea = styled(SafeAreaView)`
+  flex: 1;
+  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
+`;
+
 const InfoView = styled.View`
   backgroundColor: blue;
   flex: 1;
@@ -20,14 +25,14 @@ const InfoView = styled.View`
 
 export const RestaurantsScreen = () => {
   return (
-    <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
+    <SafeArea>
         <SearchView>
-          <Searchbar placeholder="Search" />
+          <Searchbar/>
         </SearchView>
         <InfoView>
           <RestaurantsInfoCard />
         </InfoView>
-      </SafeAreaView>
+      </SafeArea>
   )
 }
   
